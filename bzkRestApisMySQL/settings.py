@@ -86,6 +86,7 @@ WSGI_APPLICATION = 'bzkRestApisMySQL.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.1/ref/settings/#databases
 
+# For MySql Database
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
@@ -94,6 +95,16 @@ DATABASES = {
         'PASSWORD': 'root',
         'HOST': '127.0.0.1',
         'PORT': '3306',
+    }
+}
+
+# For Mongo DB
+DATABASES = {
+    'default': {
+        'ENGINE': 'djongo',
+        'NAME': 'bezkoder_db2',
+        'HOST': '127.0.0.1',
+        'PORT': 27017,
     }
 }
 
